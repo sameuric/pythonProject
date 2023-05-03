@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import QComboBox, QDateEdit, QApplication, QWidget, QPushBu
 from PyQt5.QtGui import QPalette, QColor
 from PyQt5.QtCore import QDate, Qt
 
+import RtVisualization
 
 class Fenetre(QWidget):
     def __init__(self):
@@ -18,8 +19,7 @@ class Fenetre(QWidget):
 
 
         # Create tab pages
-        page1 = QWidget()
-        page1.bouton = QPushButton("Click me")
+        page1 = RtVisualization.Tab()
 
         page2 = QWidget()
         page2.setStyleSheet("QLabel {margin-top: 10px}")
