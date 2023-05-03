@@ -87,6 +87,7 @@ class Fenetre(QWidget):
 
         # Layouts
         layout1 = QVBoxLayout()
+        layout1.addWidget(page1.htmlView)
         layout1.addWidget(page1.bouton)
 
 
