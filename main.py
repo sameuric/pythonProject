@@ -20,6 +20,7 @@ class Fenetre(QWidget):
 
         # Create tab pages
         page1 = RtVisualization.Tab()
+        page1.setStyleSheet("QLineEdit * {padding: 3px; width:110px}")
 
         page2 = QWidget()
         page2.setStyleSheet("QLabel {margin-top: 10px}")
@@ -88,6 +89,7 @@ class Fenetre(QWidget):
         # Layouts
         layout1 = QVBoxLayout()
         layout1.addWidget(page1.htmlView)
+        layout1.addWidget(page1.searchBar)
         layout1.addWidget(page1.bouton)
 
 
